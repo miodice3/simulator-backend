@@ -1,0 +1,2 @@
+class ApplianceController < ApplicationController
+end
