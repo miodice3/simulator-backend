@@ -1,2 +1,0 @@
-class ApplianceController < ApplicationController
-end

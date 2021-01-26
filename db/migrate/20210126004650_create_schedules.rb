@@ -1,7 +1,7 @@
 class CreateSchedules < ActiveRecord::Migration[6.0]
   def change
     create_table :schedules do |t|
-      t.integer :item_id
+      t.integer :appliance_id
       t.string :day
       t.string :time_on
       t.string :time_off
