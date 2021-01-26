@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-appliance_lamp = Appliance.create(name: "Table Lamp", status: "off", url_on: "off", url_off: "off")
-appliance_dishwasher = Appliance.create(name: "Dishwasher", status: "off", url_on: "off", url_off: "off")
-appliance_ev = Appliance.create(name: "EV", status: "off", url_on: "off", url_off: "off")
-appliance_dryer = Appliance.create(name: "Dryer", status: "off", url_on: "off", url_off: "off")
+appliance_lamp = Appliance.create(name: "Table Lamp", status: "off", url_on: "off", url_off: "off", wattage: 75)
+appliance_dishwasher = Appliance.create(name: "Dishwasher", status: "off", url_on: "off", url_off: "off",  wattage: 200)
+appliance_ev = Appliance.create(name: "EV", status: "off", url_on: "off", url_off: "off",  wattage: 7200)
+appliance_dryer = Appliance.create(name: "Dryer", status: "off", url_on: "off", url_off: "off",  wattage: 2000)
 
 Schedule.create(appliance: appliance_lamp, day: "Weekday", time_on: "17:00", time_off: "22:00", set_point: 0)
 Schedule.create(appliance: appliance_lamp, day: "Weekend", time_on: "12:00", time_off: "22:00", set_point: 0)
