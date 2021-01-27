@@ -2,7 +2,7 @@ class AppliancesController < ApplicationController
 
   def create
     appliance = Appliance.create(appliance_params)
-    # byebug
+      # byebug
     render json: ApplianceSerializer.new(appliance).to_serialized_json
   end
 
@@ -21,6 +21,5 @@ class AppliancesController < ApplicationController
   def appliance_params
     params.require(:appliance).permit(:name, :wattage)
   end
-
 
 end
