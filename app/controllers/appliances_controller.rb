@@ -16,6 +16,11 @@ class AppliancesController < ApplicationController
     render json: ApplianceSerializer.new(appliance).to_serialized_json
   end
 
+  def destroy
+    appliance = Appliance.find_by_id(params[:id])
+    appliance.destroy
+  end
+
   private
 
   def appliance_params
