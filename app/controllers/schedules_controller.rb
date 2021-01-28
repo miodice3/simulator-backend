@@ -2,7 +2,6 @@ class SchedulesController < ApplicationController
 
     def create
         schedule = Schedule.create(schedule_params)
-
     end
 
     def destroy

@@ -2,7 +2,6 @@ class AppliancesController < ApplicationController
 
   def create
     appliance = Appliance.create(appliance_params)
-      # byebug
     render json: ApplianceSerializer.new(appliance).to_serialized_json
   end
 
