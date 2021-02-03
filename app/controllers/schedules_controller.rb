@@ -18,7 +18,6 @@ class SchedulesController < ApplicationController
 
         appliances = Appliance.all
         render json: ApplianceSerializer.new(appliances).to_serialized_json
-
     end
 
     def destroy
